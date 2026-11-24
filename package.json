@@ -1,0 +1,34 @@
+{
+  "name": "whitelabel-ai-receptionist",
+  "version": "0.1.0",
+  "description": "An AI receptionist that answers a phone line over Twilio ConversationRelay and works with any CRM through one small interface.",
+  "type": "module",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clwzrd/whitelabel-ai-receptionist.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "check": "tsc --noEmit",
+    "try": "tsx src/try.ts"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "tsx": "^4.19.2",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^24.13.3",
+    "@types/pg": "^8.11.10",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.3"
+  }
+}

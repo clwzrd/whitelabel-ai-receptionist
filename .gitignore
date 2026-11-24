@@ -1,4 +1,7 @@
 node_modules/
+*.log
+
+# Secrets never go in the repository. Only the example is tracked.
 .env
 .env.*
 !.env.example

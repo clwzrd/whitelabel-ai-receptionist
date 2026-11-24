@@ -10,15 +10,13 @@ Bug reports, fixes and improvements are welcome.
 3. Run the checks:
 
 ```bash
-git clone https://github.com/clwzrd/whitelabel-crm
-cd whitelabel-crm && npm ci
-npm test          # includes the receptionist's tests
-npx astro check
+npm install
+npm test        # the whole suite; no phone, no keys, no database needed
+npm run check   # types
 ```
 
-   This repository mirrors the receptionist's code from `whitelabel-crm`, where
-   it runs and is tested. Send the pull request there; the same paths exist in
-   both.
+   A change to how the assistant talks is easier to judge with a real model:
+   `npm run try -- "..."` runs a conversation in text.
 
 4. Keep the change focused: one problem per pull request, with a description
    of what was wrong and how you checked the fix.
